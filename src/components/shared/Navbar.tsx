@@ -17,8 +17,8 @@ const Navbar = () => {
         <motion.img
           src={logo}
           alt="arch studio logo"
-          initial={{ x: "-100%", opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
         />
       </Link>
