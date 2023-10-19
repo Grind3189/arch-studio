@@ -8,7 +8,7 @@ function Layout() {
   return (
     <div className="relative xl:mx-auto xl:w-[1110px]">
       <motion.div
-        className={`absolute flex items-center gap-12 ${
+        className={`absolute flex items-center gap-12 rotate-90 ${
           pathname === "/"
             ? "left-[-220px] top-[90px]"
             : pathname === "/portfolio"
@@ -17,9 +17,9 @@ function Layout() {
             ? "left-[-272px] top-[145px]"
             : "left-[-260px] top-[135px]"
         }`}
-        initial={{ rotate: 0, opacity: 0 }}
-        animate={{ rotate: 90, opacity: 1 }}
-        transition={{ duration: 0.5 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
       >
         <div className="h-1 w-[104px] border-t border-t-grey-200" />
         <h1 className="text-[18px] font-medium uppercase tracking-[18px] text-grey-200">

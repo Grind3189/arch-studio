@@ -44,7 +44,7 @@ const Hero = () => {
     <main
       className={`${bgImg} relative mb-[72px] flex h-[560px] flex-col justify-center border bg-cover px-8 md:mb-[248px] md:h-[720px] md:px-[58px] xl:mb-[195px] xl:px-[190px]`}
     >
-      <motion.div className="z-10 text-white" initial={{opacity:0}} animate={{opacity: 1}} transition={{duration: 0.3}}>
+      <motion.div className="z-10 text-white" initial={{opacity:0}} animate={{opacity: 1}} transition={{duration: 1}}>
         <h1 className="mb-[11px] w-[311px] text-[48px] font-bold leading-[48px] tracking-[-1.2px] md:w-[457px] md:text-[96px] md:leading-[80px] xl:w-[544px]">
           {filteredData.title}
         </h1>
