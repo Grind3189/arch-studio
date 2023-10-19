@@ -14,7 +14,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleResize = () => {
       if(window.innerWidth >= 768) {
-        showNav && setShowNav(false)
+        setShowNav(false)
       }
     }
 
@@ -26,8 +26,6 @@ const Navbar = () => {
 
 
   }, [])
-
-  console.log(showNav)
 
   document.body.style.overflowY = showNav ? "hidden" : "auto"
 
