@@ -1,7 +1,7 @@
 import logo from "../../assets/logo.svg";
 import ToggleMenuBtn from "./ToggleMenuBtn";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const Navbar = () => {
@@ -10,6 +10,26 @@ const Navbar = () => {
   const toggleNav = () => {
     setShowNav((prev) => !prev);
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if(window.innerWidth >= 768) {
+        showNav && setShowNav(false)
+      }
+    }
+
+    window.addEventListener("resize", handleResize)
+
+    return () => {
+      window.removeEventListener("resize", handleResize) 
+    }
+
+
+  }, [])
+
+  console.log(showNav)
+
+  document.body.style.overflowY = showNav ? "hidden" : "auto"
 
   return (
     <header className="flex h-[96px] items-center justify-between px-8 md:justify-normal md:gap-[78px] md:px-[97px] md:py-[56px] xl:gap-[94px] xl:px-0">
