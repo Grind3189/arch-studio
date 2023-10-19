@@ -8,7 +8,7 @@ const Featured = () => {
       <div className="mb-[41px] flex justify-between items-center">
         <h1 className="text-[48px] font-bold tracking-[-1.71px] md:text-[72px]">Featured</h1>
         <Link
-          to=""
+          to="portfolio"
           className="flex h-[72px] w-[169px] items-center justify-center gap-6 bg-black text-[18px] font-bold text-white max-md:hidden lg:hover:bg-grey-400"
         >
           <span>See All</span>

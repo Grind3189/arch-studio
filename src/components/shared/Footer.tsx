@@ -10,12 +10,12 @@ const Footer = () => {
           <img src={logo} alt="logo image" />
         </div>
         <div className="flex flex-col gap-[33px] text-[18px] font-bold text-grey-400 md:flex-row md:gap-[50px] xl:mr-auto">
-          <Link to="" className="lg:hover:text-black">Portfolio</Link>
-          <Link to="" className="lg:hover:text-black">About Us</Link>
-          <Link to="" className="lg:hover:text-black">Contact</Link>
+          <Link to="portfolio" className="lg:hover:text-black">Portfolio</Link>
+          <Link to="about-us" className="lg:hover:text-black">About Us</Link>
+          <Link to="contact-us" className="lg:hover:text-black">Contact</Link>
         </div>
         <Link
-          to=""
+          to="portfolio"
           className="mb-12 flex h-[72px] w-[252px] items-center justify-center gap-6 bg-black text-[18px] font-bold text-white md:mb-0 md:mr-[-20%] xl:mr-[-125px] lg:hover:bg-grey-400"
         >
           <span>See Our Portfolio</span>
