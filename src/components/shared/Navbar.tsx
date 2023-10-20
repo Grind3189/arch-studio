@@ -48,17 +48,17 @@ const Navbar = () => {
         } md:h-[unset] md:w-[unset] md:translate-x-0 md:bg-transparent md:opacity-100`}
       >
         <ul className="ml-auto flex w-[90%] flex-col gap-[17px] bg-grey-100 px-12 py-[39px] text-[32px] font-bold md:ml-0 md:w-full md:flex-row md:gap-[61px] md:bg-transparent md:px-0 md:py-0 md:text-[18px] md:text-grey-300 xl:gap-[61px]">
-          <li>
+          <li onClick={toggleNav}>
             <Link to="portfolio" className="lg:hover:text-black">
               Portfolio
             </Link>
           </li>
-          <li>
+          <li onClick={toggleNav}>
             <Link to="about-us" className="lg:hover:text-black">
               About Us
             </Link>
           </li>
-          <li>
+          <li onClick={toggleNav}>
             <Link to="contact-us" className="lg:hover:text-black">
               Contact
             </Link>
